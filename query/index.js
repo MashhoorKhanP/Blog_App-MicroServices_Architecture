@@ -50,7 +50,6 @@ app.post('/events', (req, res) => {
 });
 
 app.listen(4002, async () => {
-
   console.log('Listening on http://localhost:4002');
 
   try {
