@@ -23,14 +23,6 @@ build:
         manual:
           - src: "*.js"
             dest: .
-    - image: mashhoorkhanp/events-bus
-      context: events-bus
-      docker:
-        dockerfile: Dockerfile
-      sync:
-        manual:
-          - src: "*.js"
-            dest: .
     - image: mashhoorkhanp/moderation
       context: moderation
       docker:
