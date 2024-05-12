@@ -65,5 +65,5 @@ app.post('/events', async (req, res) => {
 })
 
 app.listen(4001, () => {
-  console.log("Listening on http://localhost:4001");
+  console.log("Listening on port 4001");
 })
