@@ -7,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   rules:
-    - host: posts.com
+    - host: blogs.com
       http:
         paths:
           - pathType: Prefix
