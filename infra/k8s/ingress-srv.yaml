@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress-srv
+  name: ingress-service
   annotations:
     spec.ingressClassName: nginx
     nginx.ingress.kubernetes.io/use-regex: "true"
@@ -10,14 +10,14 @@ spec:
     - host: blogs.com
       http:
         paths:
-          - pathType: Prefix
+          - pathType: ImplementationSpecific
             path: /posts/create
             backend:
               service:
                 name: posts-clusterip-srv
                 port:
                   number: 4000
-          - pathType: Prefix
+          - pathType: ImplementationSpecific
             path: /posts
             backend:
               service:
